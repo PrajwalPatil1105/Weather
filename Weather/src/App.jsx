@@ -21,7 +21,7 @@ function App() {
 
      async function act(){
       try {
-        let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=f10dc1d75fc84234ba562811242010&q=${city}&aqi=yes`);
+        let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=f10dc1d75fc84234ba562811242010&q=${city}&aqi=yes`);
         if (!response.ok) {
           throw new Error("City not found");
         }
